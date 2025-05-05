@@ -80,20 +80,19 @@ function App() {
                           {
                             kind: "PrometheusTimeSeriesQuery",
                             spec: { query: `up{job="prometheus"}` },
-                            // spec: { query: `1` },
                           },
                         ]}
                       >
                         <Panel
-                          panelOptions={{
-                            hideHeader: true,
-                          }}
+                          panelOptions={
+                            {
+                              // hideHeader: true,
+                            }
+                          }
                           definition={{
                             kind: "Panel",
                             spec: {
-                              // queries: queries,
-                              // queries: [],
-                              display: { name: "Example" },
+                              display: { name: "Example Panel" },
                               plugin: {
                                 kind: "TimeSeriesChart",
                                 spec: {

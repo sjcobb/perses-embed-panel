@@ -13,7 +13,8 @@ const fakeDatasource: GlobalDatasourceResource = {
     plugin: {
       kind: "PrometheusDatasource",
       spec: {
-        directUrl: "https://prometheus.demo.do.prometheus.io",
+        // directUrl: "https://prometheus.demo.do.prometheus.io",
+        directUrl: "https://demo.promlabs.com",
       },
     },
   },
