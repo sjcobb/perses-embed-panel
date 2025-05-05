@@ -76,14 +76,13 @@ function App() {
                   >
                     <Box sx={{ width: 600, height: 300 }}>
                       <DataQueriesProvider
-                        definitions={[]}
-                        // definitions={[
-                        //   {
-                        //     kind: "PrometheusTimeSeriesQuery",
-                        //     // spec: { query: `up{job="prometheus"}` },
-                        //     spec: { query: `1` },
-                        //   },
-                        // ]}
+                        definitions={[
+                          {
+                            kind: "PrometheusTimeSeriesQuery",
+                            spec: { query: `up{job="prometheus"}` },
+                            // spec: { query: `1` },
+                          },
+                        ]}
                       >
                         <Panel
                           panelOptions={{
