@@ -13,7 +13,9 @@ const fakeDatasource: GlobalDatasourceResource = {
     plugin: {
       kind: "PrometheusDatasource",
       spec: {
-        // directUrl: "https://prometheus.demo.do.prometheus.io",
+        // Setup your datasource here
+        // https://perses.dev/perses/docs/plugins/prometheus
+        // https://github.com/perses/perses/blob/main/docs/concepts/proxy.md
         directUrl: "https://demo.promlabs.com",
       },
     },
